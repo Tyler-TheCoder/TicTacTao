@@ -18,3 +18,17 @@ i	i/3 (row)	i%3 (col)	board position
 so one loop will access all elements of both the 2D board and the 1D collection cells
 
 
+# Event Listeners:
+
+when ever an event listener is triggered , the browser automatically inject an event object containing all the infos about the event occured
+```
+e.target          // the exact element that was clicked
+e.currentTarget   // the element the listener is attached to
+e.type            // "click", "keydown", "submit", etc.
+e.preventDefault()// stops default browser behavior (e.g. form submit)
+e.stopPropagation()// stops event from bubbling up to parent elements
+e.clientX/clientY // mouse coordinates at time of click
+e.key             // which key was pressed (for keyboard events)
+e.timeStamp       // when the event occurred
+```
+
